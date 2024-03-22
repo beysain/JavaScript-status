@@ -1,0 +1,135 @@
+* {
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1128px;
+  height: 751px;
+  /* background-color: bisque; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1128px;
+  height: 751px;
+  top: 60px;
+  left: 120px;
+  gap: 80px;
+}
+.title {
+  font-family: Roboto;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 61px;
+}
+.active-cards {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  min-height: 195px;
+  gap: 32px;
+}
+
+.inactive-cards {
+  /* background-color: orange; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  min-height: 195px;
+  gap: 32px;
+}
+/* .cards-container {
+  background-color: purple;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  height: 195px;
+  gap: 32px;
+} */
+
+.card {
+  /* background-color: orange; */
+  width: 200px;
+  height: 195px;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.user-name {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.user-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 85px;
+  height: 29px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 34px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.active-status {
+  background-color: rgba(51, 134, 0, 0.2);
+  color: #338600;
+}
+.inactive-status {
+  background-color: rgba(232, 72, 4, 0.2);
+  color: #e84804;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 34px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.btn-active {
+  background-color: #e84804;
+  color: #fff;
+}
+
+.btn-inactive {
+  background-color: #338600;
+  color: #fff;
+}
